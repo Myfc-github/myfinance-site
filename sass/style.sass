@@ -1,17 +1,24 @@
 // Sass
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
 
 $primary-color: #215aa9
 $secondary-color: #538ddd
+$fintera: #FF69B4
 
 .flex
 	display: flex
 	flex-wrap: wrap
 
 body
-	font-family: 'Lato', sans-serif
+	font-family: 'Poppins', sans-serif
 	color: #666
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+		font-family: 'Poppins', sans-serif
+	a, a:active, a:focus
+		color: $fintera
+		&:hover
+			color: $fintera
+			text-decoration: underline
 
 header
 	background-color: $primary-color
@@ -44,9 +51,8 @@ header
 			width: 100%
 			padding: 80px
 			.heading
-				font-weight: 700
+				font-weight: 600
 				font-size: 40px
-				line-height: 1
 			.subheading
 				font-size: 32px
 		@media (min-width: 40rem)
@@ -61,7 +67,7 @@ header
 			&:nth-child(-n+9)
 				margin-bottom: 60px
 			.title
-				color: $secondary-color
+				color: $fintera
 				font-size: 22px
 			.paragraph
 				font-size: 15px
@@ -76,7 +82,9 @@ header
 				repeat: no-repeat
 			padding-top: 80px
 	.title
-		color: $primary-color
+		color: $fintera
+		font-size: 28px
+		font-weight: 600
 	@media (max-width: 60rem)
 		&--features
 			article
@@ -109,10 +117,10 @@ header
 			text-align: center
 
 footer
-	background-color: #4a4a4a
+	background-color: $fintera
 	padding: 40px 0
 	font-size: 12px
-	color: #9b9b9b
+	color: white
 	.flex
 		flex-direction: column
 		gap: 10px
